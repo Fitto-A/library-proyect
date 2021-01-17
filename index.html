@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header_title">Librería</h1>
+    </header>
+
+    <main class="main">
+        <div id="display"></div>
+        <button id="newBook">Nuevo libro</button>
+        <div class="grid"></div>
+    </main>
+
+    <div class="content">
+        <form class="content_form">
+            <h3 class="content_title">Agrega un nuevo libro</h3>
+            <input 
+            class="content_input" 
+            type="text" 
+            placeholder="Título" 
+            id="title"
+            required
+            >
+            <input 
+            class="content_input" 
+            type="text" 
+            placeholder="Autor" 
+            id="author"
+            required
+            >
+            <input 
+            class="content_input" 
+            type="text" 
+            placeholder="Páginas" 
+            id="pages"
+            required
+            >
+            <div class="content_read">
+                <label for="read">Leído?</label>
+                <input type="checkbox" id="read">
+            </div>
+
+            <button class="btn_agregar btnGeneral" type="submit">Agregar</button>
+        </form>
+    </div>
+    <div class="overlay"></div>
+
+</body>
+<script src="script/main.js"></script>
+</html>
